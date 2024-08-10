@@ -23,13 +23,13 @@ This is a simple role randomizer tool made specifically for the 'Ultimate Werewo
 3. Generate!
 
 ## FAQs
-Q. How to add custom roles or other roles? 
+Q. How to add custom roles or other roles?__
 A. To the 'roles' list in the main function, add the role in the format ["Name", Strength, "Type"].
 
-Q. What is strength?
+Q. What is strength?__
 A. It is the +ve or -ve value in the bottom right of the werewolf card.
 
-Q. What are the supported types?
+Q. What are the supported types?__
 A. As of now the only supported types are (more supported types coming soon... maybe):
       "W" - Werewolf
       "T" - Town
