@@ -1,0 +1,313 @@
+body {
+    margin-top: 14.222vh;
+    background-color: rgb(45, 42, 42);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 14.222vh;
+
+    background-color: rgb(50, 46, 47);
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom: 2px dotted #000;
+}
+.nav .title-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.nav .title-holder h1,
+.nav .title-holder h3,
+.nav .title-holder h4 {
+    margin: 0 1.5vw;
+    text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.35);
+}
+.nav .title-holder h1 {
+    font-size: 5vh;
+}
+.nav .title-holder h4 {
+    font-size: 1.422vh;
+}
+
+.spread-letter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.spread-letter span {
+    font-size: 1.422vh;
+    font-weight: bold;
+    display: inline-block;
+    width: calc(100% / 8);
+    text-align: center;
+}
+
+.body {
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+}
+.body form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* Input Tags */
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#top label {
+    margin: 0.6vh;
+}
+.option {
+    padding: 0.5vw;
+    margin: 0.8vh 0;
+    background-color: rgb(50, 46, 47);
+    border: 0.15vw solid #1a1a1a;
+    border-radius: 0.25vw;
+}
+
+
+.players {
+    width: 32.407vh;
+    height: 1.389vh;
+    -webkit-appearance: none;
+    outline: none;
+    background:rgb(50, 46, 47);
+    border-radius: 1.389vh;
+    border: 0.5vh #1a1a1a;
+    overflow: hidden;
+    box-shadow: inset 0 0 0.2vh rgba(0, 0, 0, 0.35);
+}
+.players::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.389vh;
+    height: 1.389vh;
+    border-radius: 50%;
+    background: #DD8822;
+    cursor: pointer;
+    border: 4px solid #DD8822;
+}
+#player-value {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.players-warning {
+    display: none;
+    color: #DD8822;
+    font-size: 1.2vh;
+    width: 28vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+
+
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bottom div {
+    display: flex;
+    justify-content: space-between;
+    width: 32.407vh;
+    margin: 1vh 0;
+    padding: 0.2vw 0.25vw;
+}
+
+#bottom div button {
+    border: none;
+    outline: none;
+    border-radius: 0.15vw;
+    border: 0.3vh solid #1a1a1a;
+
+    width: 1vw;
+    height: 100%;
+
+    transition: 0.15s ease-in-out;
+}
+#bottom div button.active {
+    background-color: #DD8822;
+}
+#bottom div button:hover {
+    cursor: pointer;
+}
+
+
+.vampire-warning {
+    display: none;
+    color: #DD8822;
+    font-size: 1.2vh;
+}
+
+
+#vampires-label.disabled {
+    color: #5c5c5c;
+}
+#toggle-vampires.dsiabled {
+    background-color: #3f3f3f;
+}
+#toggle-vampires.disabled:hover {
+    cursor: default;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: #DD8822;
+    color: #fff;
+    border: 0.15vw solid #000;
+    border-radius: 0.25vw;
+    height: 3vh;
+    width: auto;
+    margin: 1vh 0 2vh 0;
+}
+.submit:hover {
+    background-color: #ec9934;
+}
+
+
+
+.result {
+    background-color: rgb(50, 46, 47);
+
+    padding: 0.5vw;
+    margin: 0.8vh 0;
+
+    border: 0.15vw solid #1a1a1a;
+    border-radius: 0.25vw;
+
+    width: 95vw;
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 18vh;
+    height: 24vh;
+
+    margin: 0.8vh;
+
+    border: 0.2vw solid #fff;
+    border-radius: 0.25vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+}
+.card .name {
+    color: #fff;
+
+    font-size: 2.25vh;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    /* font-family: "Noto Sans JP", sans-serif; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card .strength {
+    color: #fff;
+    font-size: 2vh;
+    margin-top: 2vh;
+
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.total-strength {
+    text-align: center;
+    color: #fff;
+
+    font-size: 2vh;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+
+    margin-top: 2vh;
+}
+
+
+
+
+.helper {
+    width: 100vw;
+    height: auto;
+
+    background-color: rgb(50, 46, 47);
+    border-top: 2px dotted #1a1a1a ;
+
+    display: flex;
+    justify-content: center;
+}
+
+.helper .content {
+    height: 100%;
+    width: 40%;
+
+    margin: 1vh 0;
+
+    color: #fff;
+    font-family: "Noto Sans JP", sans-serif;
+}
+.helper .content h3 {
+    font-size: 2.5vh;
+    margin-bottom: 0;
+}
+.helper .content p {
+    text-align: justify;
+}
+
+
+
+
+
+@media only screen and (width < 800px) {
+    .body, form {
+        width: 100vw;
+    }
+    .option {
+        width: 95vw;
+    }
+
+    .helper .content {
+        width: 100%;
+        margin: 1vh 1.5vh;
+    }
+
+}
