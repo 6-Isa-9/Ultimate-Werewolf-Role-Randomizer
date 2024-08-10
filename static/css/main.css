@@ -31,6 +31,7 @@ body {
     align-items: center;
     justify-content: center;
     color: #fff;
+    text-decoration: none;
 }
 .nav .title-holder h1,
 .nav .title-holder h3,
@@ -190,6 +191,7 @@ body {
 }
 .submit:hover {
     background-color: #ec9934;
+    cursor: pointer;
 }
 
 
@@ -260,6 +262,7 @@ body {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 
     margin-top: 2vh;
+    margin-bottom: 0.5vh;
 }
 
 
@@ -271,6 +274,7 @@ body {
 
     background-color: rgb(50, 46, 47);
     border-top: 2px dotted #1a1a1a ;
+    border-bottom: 2px dotted #1a1a1a ;
 
     display: flex;
     justify-content: center;
@@ -293,6 +297,20 @@ body {
     text-align: justify;
 }
 
+
+.footer {
+    width: 100vw;
+    height: 10vh;
+
+    background-color: rgb(50, 46, 47);
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    font-family: "Noto Sans JP", sans-serif;
+}
 
 
 

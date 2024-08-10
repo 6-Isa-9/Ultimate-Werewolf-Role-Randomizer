@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="static/js/main.js" type="module"></script>
     <title>Ultimate Werewolf Role Randomizer</title>
 </head>
 <body>
     <div class="nav">
-        <div class="title-holder">
+        <a class="title-holder" href="{{ url_for('main') }}">
             <div class="spread-letter">
                 <span>U</span>
                 <span>L</span>
@@ -22,7 +23,7 @@
             </div>
             <h1>W E R E W O L F</h1>
             <h4>DELUXE EDITION</h4>
-        </div>
+        </a>
     </div>
 
     <div class="body">
@@ -94,6 +95,15 @@
             <p>1. This tool is 95% accurate. If you end getting the 5% of inaccuracy, randomize the roles again, or hand pick the roles.</p>
             <p>2. When randomizing roles for players > 35 it's better to enable all the options.</p>
         </div>
+    </div>
+
+    <div class="footer">
+        <p style="margin: 0;">Made as a 🐺 by <strong>6-Isa-9</strong></p>
+        <p style="margin: 5px 0;">
+            <a href="https://github.com/6-Isa-9" target="_blank" style="color: #007bff; text-decoration: none;">
+                <i class="fab fa-github"></i> Visit my GitHub
+            </a>
+        </p>
     </div>
     
 </body>
