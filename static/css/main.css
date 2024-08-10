@@ -262,7 +262,7 @@ body {
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 
     margin-top: 2vh;
-    margin-bottom: 0.5vh;
+    margin-bottom: 1vh;
 }
 
 
@@ -274,7 +274,6 @@ body {
 
     background-color: rgb(50, 46, 47);
     border-top: 2px dotted #1a1a1a ;
-    border-bottom: 2px dotted #1a1a1a ;
 
     display: flex;
     justify-content: center;
@@ -300,15 +299,23 @@ body {
 
 .footer {
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
 
-    background-color: rgb(50, 46, 47);
+    background-color: rgb(45, 42, 42);
+    border-top: 2px dotted #1a1a1a ;
+
+    padding-top: 0.25vh;
 
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 
+    font-family: "Noto Sans JP", sans-serif;
+
+    color: #fff;
+}
+.footer a {
     font-family: "Noto Sans JP", sans-serif;
 }
 
