@@ -12,11 +12,21 @@ This is a simple role randomizer tool made specifically for the 'Ultimate Werewo
    ```
    pip install -r requirements.txt
    ```
-2. Run the Flask app:
+2. To host the server locally, scroll all the way down in 'app.py' and change
+   ```
+   if __name__ == '__main__':
+    app.run(debug=False, host='0.0.0.0')
+   ```
+   to this
+   ```
+   if __name__ == '__main__':
+    app.run(debug=True)
+   ```
+4. Run the Flask app:
    ```
    flask run --debug
    ``` 
-3. Launching the server may take a while but once launched it should be good to go.
+5. Launching the server may take a while but once launched it should be good to go.
 
 ### Usage
 1. Select the number of players (5 - 40) excluding the moderator.
