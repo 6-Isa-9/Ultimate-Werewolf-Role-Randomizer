@@ -1,4 +1,5 @@
 # Ultimate-Werewolf-Role-Randomizer
+![Ultimate Werewolf Deluxe Edition](https://cf.geekdo-images.com/dncdxD1g4dxMh9e8oKlzbg__opengraph/img/fyS4S6BZX_krWoxUwRBgjvECKZU=/0x0:1000x525/fit-in/1200x630/filters:strip_icc()/pic1878492.png)
 This is a simple role randomizer tool made specifically for the 'Ultimate Werewolf Deluxe Edition (Hunting Party Expansion)' pack. But it can be modified to make it compatible with other versions of werewolf with the only requirement being an IQ of atleast 117.4.
 
 ## Requirements
